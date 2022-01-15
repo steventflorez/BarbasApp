@@ -20,7 +20,7 @@
         <!--BOOSTRAP-->
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>BargasApp</title>
+    <title>BargasApp-Home</title>
     
 
     <link
@@ -62,8 +62,9 @@
 <section class="portafolio">
     <div class="contenedor">
         <h2 class="titulo">Catalogo de Cortes</h2>
+        <div class="row">
         <div class="galeria-port">
-            <div class="imagen-port">
+            <div class="imagen-port col-6 col-md-3">
                 <img src="/img/corte1.png" alt="imagen_1">
                 <div class="hover-galeria">
                     <i class="material-icons">
@@ -71,7 +72,7 @@
                     <p>Nuestro trabajo</p>
                 </div>
             </div>
-            <div class="imagen-port">
+            <div class="imagen-port col-6 col-md-3">
                 <img src="/img/corte2.png" alt="imagen_2">
                 <div class="hover-galeria">
                     <i class="material-icons">
@@ -79,7 +80,7 @@
                     <p>Nuestro trabajo</p>
                 </div>
             </div>
-            <div class="imagen-port">
+            <div class="imagen-port col-6 col-md-3">
                 <img src="/img/corte3.png" alt="imagen_3">
                 <div class="hover-galeria">
                     <i class="material-icons">
@@ -87,7 +88,7 @@
                     <p>Nuestro trabajo</p>
                 </div>
             </div>
-            <div class="imagen-port">
+            <div class="imagen-port col-6 col-md-3">
                 <img src="/img/corte4.png" alt="imagen_4">
                 <div class="hover-galeria">
                     <i class="material-icons">
@@ -95,7 +96,7 @@
                     <p>Nuestro trabajo</p>
                 </div>
             </div>
-            <div class="imagen-port">
+            <div class="imagen-port col-6 col-md-3">
                 <img src="/img/corte5.png" alt="imagen_5">
                 <div class="hover-galeria">
                     <i class="material-icons">
@@ -103,7 +104,7 @@
                     <p>Nuestro trabajo</p>
                 </div>
             </div>
-            <div class="imagen-port">
+            <div class="imagen-port col-6 col-md-3">
                 <img src="/img/corte6.png" alt="imagen_6">
                 <div class="hover-galeria">
                     <i class="material-icons">
@@ -111,7 +112,7 @@
                     <p>Nuestro trabajo</p>
                 </div>
             </div>
-            <div class="imagen-port">
+            <div class="imagen-port col-6 col-md-3">
                 <img src="/img/corte7.jpg" alt="imagen_7">
                 <div class="hover-galeria">
                     <i class="material-icons">
@@ -119,7 +120,7 @@
                     <p>Nuestro trabajo</p>
                 </div>
             </div>
-            <div class="imagen-port">
+            <div class="imagen-port col-6 col-md-3">
                 <img src="/img/corte8.jpg" alt="imagen_8">
                 <div class="hover-galeria">
                     <i class="material-icons">
@@ -129,24 +130,27 @@
             </div>
         </div>
     </div>
+    </div>
 </section>
 <section class="cliente contenedor">
     <h2 class="titulo">Que dicen nuestros clientes</h2>
     <div class="cards">
-        <div class="card">
+        <div class="row">
+        <div class="card col-12 col-md-6">
             <img src="/img/face1.jpg" alt="face1">
             <div class="contenido-texto-card">
                 <h4>Name</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quis!</p>
             </div>
         </div>
-        <div class="card">
+        <div class="card col-12 col-md-6">
             <img src="/img/face2.jpg" alt="face1">
             <div class="contenido-texto-card">
                 <h4>Name</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quis!</p>
             </div>
         </div>
+    </div>
     </div>
 </section>
 <section class="abaut-services">
@@ -191,7 +195,7 @@
             <p>carrera 89a#45a-38sur</p>
         </div>
     </div>
-    <h2 class="titulo-final">&copy;steve florez | Pablo Noguera | Brayan Daniel | Maycol Figueroa | Michael Martinez | Juan Piñeros</h2>
+    <h2 class="titulo-final">&copy;Steve florez  | Brayan Daniel </h2>
 </footer>
 
 <!--MODAL-->
@@ -208,8 +212,12 @@
       </header>
       <section class="modal-card-body">
           <div class="row p-3">
-            <button type="button" class="btn btn-primary"><i class="far fa-calendar"></i><span> Elegir fecha</span></button>
+              <label>Fecha de la cita: </label>
+            <input type="date" id="start" name="trip-start"
+       value="2021-12-22"
+       min="2021-01-01" max="2021-12-31">
           </div>
+          
         <br>
         <label>Seleciona barbero:</label>
         <br>
@@ -223,27 +231,27 @@
         </div>
         <br>
         <div class="row">
-            <div class="col-4 barberos"><button type="button" class="btn btn-outline-primary">9:00am</button></div>
-            <div class="col-4 barberos"><button type="button" class="btn btn-outline-primary">10:00am</button></div>
-            <div class="col-4 barberos"><button type="button" class="btn btn-outline-primary">11:00am</button></div>
+            <div class="col-4 barberos"><button type="button" class="btn btn-outline-primary" id="nueve">9:00am</button></div>
+            <div class="col-4 barberos"><button type="button" class="btn btn-outline-primary" id="10">10:00am</button></div>
+            <div class="col-4 barberos"><button type="button" class="btn btn-outline-primary" id="11">11:00am</button></div>
         </div>
         <br>
         <div class="row">
-            <div class="col-4 barberos"><button type="button" class="btn btn-outline-primary">12:00pm</button></div>
-            <div class="col-4 barberos"><button type="button" class="btn btn-outline-primary">1:00pm</button></div>
-            <div class="col-4 barberos"><button type="button" class="btn btn-outline-primary">2:00pm</button></div>
+            <div class="col-4 barberos"><button type="button" class="btn btn-outline-primary" id="12">12:00pm</button></div>
+            <div class="col-4 barberos"><button type="button" class="btn btn-outline-primary" id="13">1:00pm</button></div>
+            <div class="col-4 barberos"><button type="button" class="btn btn-outline-primary" id="14">2:00pm</button></div>
         </div>
         <br>
         <div class="row">
-            <div class="col-4 barberos"><button type="button" class="btn btn-outline-primary">3:00pm</button></div>
-            <div class="col-4 barberos"><button type="button" class="btn btn-outline-primary">4:00pm</button></div>
-            <div class="col-4 barberos"><button type="button" class="btn btn-outline-primary">5:00pm</button></div>
+            <div class="col-4 barberos"><button type="button" class="btn btn-outline-primary" id="15">3:00pm</button></div>
+            <div class="col-4 barberos"><button type="button" class="btn btn-outline-primary" id="16">4:00pm</button></div>
+            <div class="col-4 barberos"><button type="button" class="btn btn-outline-primary" id="17">5:00pm</button></div>
         </div>
         <br>
         <div class="row">
-            <div class="col-4 barberos"><button type="button" class="btn btn-outline-primary">6:00pm</button></div>
-            <div class="col-4 barberos"><button type="button" class="btn btn-outline-primary">7:00pm</button></div>
-            <div class="col-4 barberos"><button type="button" class="btn btn-outline-primary">8:00pm</button></div>
+            <div class="col-4 barberos"><button type="button" class="btn btn-outline-primary" id="18">6:00pm</button></div>
+            <div class="col-4 barberos"><button type="button" class="btn btn-outline-primary" id="19">7:00pm</button></div>
+            <div class="col-4 barberos"><button type="button" class="btn btn-outline-primary" id="20">8:00pm</button></div>
         </div>
         <br>
         <label>Ingresa tu Numero de Telefono:</label> 

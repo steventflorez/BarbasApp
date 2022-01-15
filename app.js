@@ -31,7 +31,14 @@ window.addEventListener('DOMcontentLoaded', async (e)=>{
 const openModal = document.getElementById('open-modal');
 const modal = document.getElementById('modal');
 const closeModal = document.getElementById('closeRegisterModel');
+const nueve = document.getElementById('nueve');
 
+
+
+nueve.addEventListener('click', ()=>{
+    nueve.style.backgroundColor = "green";
+    nueve.style.color = "#fff";
+})
 
 
 
@@ -43,3 +50,6 @@ const showRegisterModal = () =>{
 }
 openModal.addEventListener('click', showRegisterModal)
 closeModal.addEventListener('click', showRegisterModal)
+
+
+
